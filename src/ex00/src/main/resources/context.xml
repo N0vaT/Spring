@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="preProcessorToUpperIml" class="edu.school21.Spring.beans.PreProcessorToUpperImpl"/>
+    <bean id="rendererErrImpl" class="edu.school21.Spring.beans.RendererErrImpl">
+        <constructor-arg ref="preProcessorToUpperIml"/>
+    </bean>
+    <bean id="printerWithPrefix" class="edu.school21.Spring.beans.PrinterWithPrefixImpl">
+        <constructor-arg ref="rendererErrImpl"/>
+    </bean>
+</beans>
