@@ -15,7 +15,7 @@ PreProcessorToUpperImpl переводит все буквы в верхний �
 нижний регистр.
 UML-диаграмма классов показана ниже:
 
-![Screen_Novalib](https://github.com/N0vaT/Spring/blob/master/Diagram.png)
+![UML-диаграмма](https://github.com/N0vaT/Spring/blob/main/Diagram.png)
 
 An example of code using these classes in a standard way:
 ```java
